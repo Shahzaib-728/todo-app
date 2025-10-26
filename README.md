@@ -17,46 +17,6 @@ Manage your todos efficiently with authentication, deadlines, and completion tra
 
 ---
 
-## 🗂️ Project Structure
-todo-app/
-│
-├── backend/
-│ ├── server.js
-│ ├── config/
-│ │ └── db.js
-│ ├── controllers/
-│ │ ├── authController.js
-│ │ └── todoController.js
-│ ├── models/
-│ │ ├── User.js
-│ │ └── Todo.js
-│ ├── middleware/
-│ │ └── authMiddleware.js
-│ └── routes/
-│ ├── authRoutes.js
-│ └── todoRoutes.js
-│
-├── frontend/
-│ ├── src/
-│ │ ├── services/
-│ │ │ └── api.js
-│ ├── context/
-│ │ │ └── TaskContext.jsx
-│ │ ├── components/
-│ │ │ ├── TaskForm.jsx
-│ │ │ ├── TaskList.jsx
-│ │ │ ├── TaskItem.jsx
-│ │ │ ├── TaskFilter.jsx
-│ │ ├── pages/
-│ │ │ ├── Login.jsx
-│ │ │ ├── Signup.jsx
-│ │ │ └── TodoDashboard.jsx
-│ │ ├── App.jsx
-│ │ └── main.jsx
-│ └── package.json
-
----
-
 ## 🚀 Getting Started
 
 ### 1️⃣ Clone the Repository
@@ -64,15 +24,18 @@ todo-app/
 git clone https://github.com/<your-username>/todo-app.git
 cd todo-app
 
+
+2️⃣ Backend Setup
 cd backend
 npm install
 npm run dev
 
+⚙️ Create a .env file inside the backend folder:
 MONGO_URI=your_mongodb_atlas_connection_string
 JWT_SECRET=your_secret_key
 PORT=5000
 
-
+3️⃣ Frontend Setup
 cd ../frontend
 npm install
 npm run dev
